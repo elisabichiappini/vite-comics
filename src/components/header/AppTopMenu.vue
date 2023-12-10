@@ -40,15 +40,14 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use '../styles/partials/variables' as *;
-@use '../styles/general.scss' as *;
+@use '../../styles/partials/variables' as *;
+@use '../../styles/general.scss' as *;
 .navbar {
     display:flex;
     gap: 35px;
 
     li {
         list-style-type: none;
-        text-transform: uppercase;
         line-height: $size-header;
         a {
         color: $bg-bottom-footer;

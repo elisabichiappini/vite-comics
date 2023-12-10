@@ -6,7 +6,7 @@
 
 <template>
     <div class="logo">
-        <img src="../../public/img/dc-logo.png" alt="logoDC">
+        <img src="../../../public/img/dc-logo.png" alt="logoDC">
     </div>
 </template>
 
