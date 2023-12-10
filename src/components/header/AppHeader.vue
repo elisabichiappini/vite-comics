@@ -23,8 +23,7 @@ export default {
 @use '../../styles/partials/mixin' as *;
 
     header {
-        max-width: 1300px;
-        margin: 0 auto;
+        @include my-container-size;
         @include my-flex;
         justify-content: space-between;
         height: $size-header;
