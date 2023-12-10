@@ -60,7 +60,7 @@ export default {
 </script>
 
 <template>
-    <ul class="navbar">
+    <ul class="list-links">
         <li class="link" v-for="li in menu">
             <a :href="li.href" :target="li.target">{{ li.nome }}</a>
         </li>
@@ -71,7 +71,7 @@ export default {
 @use '../../styles/partials/variables' as *;
 @use '../../styles/general.scss' as *;
 @use '../../styles/partials/mixin' as *;
-.navbar {
+.list-links {
     display:flex;
     gap: 35px;
     @include my-uppercase;

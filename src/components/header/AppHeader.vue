@@ -7,11 +7,11 @@ export default {
         AppLogo,
         AppTopMenu,
     }
-}
+};
 </script>
 
 <template>
-    <header>
+    <header id="dc-navbar">
         <AppLogo></AppLogo>
         <AppTopMenu></AppTopMenu>
     </header>
@@ -22,7 +22,7 @@ export default {
 @use '../../styles/general.scss' as *;
 @use '../../styles/partials/mixin' as *;
 
-    header {
+    #dc-navbar {
         @include my-container-size;
         @include my-flex;
         justify-content: space-between;

@@ -36,14 +36,14 @@ export default {
 </script>
 
 <template>
-    <main id="main-top">
+    <main id="dc-main-top">
         <div class="container">
             <div class="content-string">
                 <span>Content goes here...</span>
             </div>
         </div>
     </main>
-    <div id="main-bottom">
+    <div id="dc-main-bottom">
         <div class="container">
             <ul class="list-skills">
                 <li class="skill-content" v-for="li in listQualities">
@@ -60,7 +60,7 @@ export default {
 @use '../../styles/general.scss' as *;
 @use '../../styles/partials/mixin.scss' as *;
 
-#main-top {            
+#dc-main-top {            
     background-color: $bg-main;
 
     .container {
@@ -73,7 +73,7 @@ export default {
     }
 }
 
-#main-bottom {            
+#dc-main-bottom {            
     background-color: $bg-primary;
     color: $color-white;
 

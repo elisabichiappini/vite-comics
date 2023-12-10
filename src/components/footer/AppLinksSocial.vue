@@ -29,10 +29,10 @@ export default {
 
 <style scoped lang="scss">
 @use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixin' as *;
 .bottom-right {
-    display: flex;
+    @include my-flex;
     gap: 20px;
-    align-items: center;
     color: $bg-primary;
     .social-links {
         display: flex;
