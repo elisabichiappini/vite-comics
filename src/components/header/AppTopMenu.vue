@@ -78,14 +78,16 @@ export default {
     .link {
         list-style-type: none;
         line-height: $size-header;
-
-        a {
-            color: $bg-bottom-footer;
-            text-decoration: none;
-
-            &:hover {
+        border-bottom: 2px solid transparent;
+        
+        &:hover {
                 color: $bg-primary;
-            }
+                border-bottom: 2px solid $bg-primary;
+        }
+        a {
+            all: unset;
+            font-weight: 600;
+            text-decoration: none;
         }
     }
 }
