@@ -22,20 +22,20 @@ export default {
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/mixin' as *;
 @use '../../styles/general.scss' as *;
+
 #footer-top {
     background-image: url('../../../public/img/footer-bg.jpg');
     background-size: cover;
     .container{
-        max-width: $size-container;
-        margin: 0 auto;
+        @include my-container-size;
         @include my-flex;
         justify-content: space-between;
         overflow: hidden;
         .logo-bg {
-            width: 800px;
-            height: 500px;
+            width: 600px;
+            height: 350px;
             object-fit: cover;
-            }
         }
     }
+}
 </style>

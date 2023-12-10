@@ -1,70 +1,43 @@
 <script>
     export default {
         name: 'ListMenuFooter',
+        data () {
+            return {
+                menu: [
+                {
+                    nomeClasse: 'Dc comics',
+                    links: ['Characters', 'Comics', 'Movies', 'TV', 'Games', 'Videos', 'News'],
+                },
+                {
+                    nomeClasse: 'Shop',
+                    links: ['Shop Dc', 'Shop Dc Collectibles'],
+                },
+                {
+                    nomeClasse: 'Dc',
+                    links: ['Terms Of Use', 'Privacy policy (New)', 'Ad Choices', 'Advertising', 'Jobs', 'Subscriptions', 'Talent Workshops', 'CPSC Certificates', 'Ratings', 'Shop Help', 'Contact Us'],
+                },
+                {
+                    nomeClasse: 'Sites',
+                    links: ['Dc', 'Mad Magazine', 'Dc Kids', 'Dc Universe', 'Dc Power Visa'],
+                }],
+            }
+        },
     };
 </script>
 
 <template>
     <ul class="menu-footer-nav"> 
-        <strong>DC COMICS</strong>
-        <li>
-            <a href="" target="" class="footer-nav">Character</a>
-        </li>
-        <li>
-            <a href="" target="" class="footer-nav">Comics</a>
-        </li>
-        <li>
-            <a href="" target="" class="footer-nav">Movies</a>
-        </li>
-        <li>
-            <a href="" target="" class="footer-nav">TV</a>
-        </li>
-        <li>
-            <a href="" target="" class="footer-nav">Character</a>
-        </li>
-        <li>
-            <a href="" target="" class="footer-nav">Comics</a>
-        </li>
-        <li>
-            <a href="" target="" class="footer-nav">Movies</a>
-        </li>
-        <li>
-            <a href="" target="" class="footer-nav">TV</a>
-        </li>
-        <li>
-            <a href="" target="" class="footer-nav">Character</a>
-        </li>
-        <li>
-            <a href="" target="" class="footer-nav">Comics</a>
-        </li>
-        <li>
-            <a href="" target="" class="footer-nav">Movies</a>
-        </li>
-        <li>
-            <a href="" target="" class="footer-nav">TV</a>
-        </li>
-        <li>
-            <a href="" target="" class="footer-nav">Character</a>
-        </li>
-        <li>
-            <a href="" target="" class="footer-nav">Comics</a>
-        </li>
-        <li>
-            <a href="" target="" class="footer-nav">Movies</a>
-        </li>
-        <li>
-            <a href="" target="" class="footer-nav">TV</a>
-        </li> <li>
-            <a href="" target="" class="footer-nav">Character</a>
-        </li>
-        <li>
-            <a href="" target="" class="footer-nav">Comics</a>
-        </li>
-        <li>
-            <a href="" target="" class="footer-nav">Movies</a>
-        </li>
-        <li>
-            <a href="" target="" class="footer-nav">TV</a>
+        <li v-for="classelink in menu" class="sections">
+            <h2>
+                {{ classelink.nomeClasse }}
+            </h2>
+            <ul class="labels">
+                <li class="label-id" v-for="link in classelink.links">
+                    <a href="#" target="_blank">
+                        {{ link }}
+                    </a>
+                </li>
+            </ul>
         </li>
     </ul>
 </template>
@@ -72,21 +45,26 @@
 <style scoped lang="scss">
 @use '../../styles/general.scss' as *;
 @use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixin' as *;
+.menu-footer-nav {
+    display: flex;
+    flex-direction: column;
+    color: $color-white;
+    height: 350px;
+    padding: 40px 0 60px;
+    gap: 10px 40px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    align-content: start; 
+        .sections {
+            color: $color-white;
 
-    .menu-footer-nav {
-        display: flex;
-        flex-direction: column;
-        color: $color-white;
-        height: 500px;
-        padding: 80px 0;
-        gap: 10px 40px;
-        flex-wrap: wrap;
-        flex-grow: 1;
-        align-content: start;
-        li {
-            font-size: 10px;
-            .footer-nav {
+            a {
+                all: unset;
+                font-size: 12px;
                 color: $color-white;
+                padding-top: 10px;
+                color: #807e7e;
             }
         }
     }

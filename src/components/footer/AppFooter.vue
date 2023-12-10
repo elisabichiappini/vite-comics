@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-    <footer>
+    <footer id="dc-footer">
         <AppFooterTop></AppFooterTop>
         <AppFooterBottom></AppFooterBottom>
     </footer>
