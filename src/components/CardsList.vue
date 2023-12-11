@@ -96,7 +96,7 @@ export default {
         <Card 
         v-for="card in cards"
         :image="card.thumb"
-        :title="card.type">    
+        :title="card.series">    
         </Card>
     </div>
     <AppSecondaryButton></AppSecondaryButton>
@@ -105,6 +105,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
 .container {
     max-width: 1180px;
     margin: 0 auto;
@@ -114,10 +115,11 @@ export default {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
-        
+        padding-bottom: 20px;
+        color: $color-white;
         .card {
             width: calc((100% - 50px) / 6);
-            background-color: antiquewhite;
+
         }
     }
 }

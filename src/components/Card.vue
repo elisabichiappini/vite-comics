@@ -16,9 +16,15 @@ export default {
 <style lang="scss" scoped>
 
 .card {
-        img {
-            width: 100%;
-            display: block;
+    img {
+        width: 100%;
+        display: block;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+    h4{
+        text-align: start;
     }
 }
 </style>
