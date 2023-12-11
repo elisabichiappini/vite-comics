@@ -6,10 +6,19 @@ export default {
 
 <template>
     <div class="card">
-        <img :src="image" 
+        <img 
+        :src="image" 
         :alt="title">
         <h4>{{ title }}</h4>
     </div>
 </template>
 
-<style></style>
+<style lang="scss" scoped>
+
+.card {
+        img {
+            width: 100%;
+            display: block;
+    }
+}
+</style>

@@ -86,12 +86,7 @@ export default {
         }],
     }
 },
-    methods: {
-        transformJsData() {
-            const transformData = JSON.parse(this.cards);
-            return this.jsData.push([transformData]);
-        }
-    }
+
 };
 </script>
 
@@ -99,7 +94,7 @@ export default {
 <div class="container">
     <div class="cards-list">
         <Card 
-        v-for="card in transformJsData()"
+        v-for="card in cards"
         :image="card.thumb"
         :title="card.type">    
         </Card>
