@@ -50,7 +50,7 @@
     display: flex;
     flex-direction: column;
     color: $color-white;
-    height: 350px;
+    max-height: 400px;
     padding: 40px 0 60px;
     gap: 10px 40px;
     flex-wrap: wrap;

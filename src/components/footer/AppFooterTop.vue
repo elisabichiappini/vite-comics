@@ -33,7 +33,7 @@ export default {
         overflow: hidden;
         .logo-bg {
             width: 600px;
-            height: 350px;
+            max-height: 400px;
             object-fit: cover;
         }
     }

@@ -1,0 +1,23 @@
+/***************************************************************
+_typography
+****************************************************************/
+@import "@fontsource/open-sans";
+
+body {
+    font-family: "Open Sans";
+  }
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    cursor: pointer;
+}

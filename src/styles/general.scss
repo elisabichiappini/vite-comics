@@ -1,26 +1,9 @@
 /***************************************************************
 SCSS
 ****************************************************************/
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+@use '../styles/partials/mixin' as *;
+@use '../styles/partials/variables' as *;
+@use '../styles/partials/reset' as *;
+@use '../styles/partials/typography' as *;
 
-h2, h3 {
-    text-transform: uppercase;
-}
-
-a {
-    font-family: Impact, sans-serif;
-    text-decoration: none;
-}
-
-
-li {
-    list-style-type: none;
-}
