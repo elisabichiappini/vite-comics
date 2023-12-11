@@ -28,14 +28,10 @@
 <template>
     <ul class="menu-footer-nav"> 
         <li v-for="classelink in menu" class="sections">
-            <h2>
-                {{ classelink.nomeClasse }}
-            </h2>
+            <h2>{{ classelink.nomeClasse }}</h2>
             <ul class="labels">
-                <li class="label-id" v-for="link in classelink.links">
-                    <a href="#" target="_blank">
-                        {{ link }}
-                    </a>
+                <li class="label-link" v-for="link in classelink.links">
+                    <a href="#" target="_blank">{{ link }}</a>
                 </li>
             </ul>
         </li>
@@ -55,15 +51,14 @@
     flex-wrap: wrap;
     flex-grow: 1;
     align-content: start; 
-        .sections {
-            color: $color-white;
-
-            a {
-                all: unset;
-                font-size: 12px;
-                color: $color-white;
-                padding-top: 10px;
-                color: #807e7e;
+        .labels {
+            display: flex;
+            flex-direction: column;
+            
+            .label-link {
+                font-size: 10px;
+                color: rgb(171, 169, 169);
+                padding-top: 8px;
             }
         }
     }

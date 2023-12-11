@@ -1,102 +1,19 @@
 <script>
+import AppSectionCards from './AppSectionCards.vue';
+import AppSectionGoals from './AppSectionGoals.vue';
+
 export default {
-    name: 'AppMain',
-    data () {
-        return {
-            listQualities: [
-                {
-                    nome: 'Digital comics',
-                    src: '../../../public/img/buy-comics-digital-comics.png',
-                    alt: 'digital-comics-image'
-                },
-                {
-                    nome: 'Dc merchandise',
-                    src: '../../../public/img/buy-comics-merchandise.png',
-                    alt: 'comics-merchandise'
-                },
-                {
-                    nome: 'Subscription',
-                    src: '../../../public/img/buy-comics-subscriptions.png',
-                    alt: 'comics-subscriptions'
-                },
-                {
-                    nome: 'Comics shop locator',
-                    src: '../../../public/img/buy-comics-shop-locator.png',
-                    alt: 'shop-locator'
-                },
-                {
-                    nome: 'Dc power visa',
-                    src: '../../../public/img/buy-dc-power-visa.svg',
-                    alt: 'power-visa'
-                },
-            ]
-        }
+    name: 'Main',
+    components: {
+        AppSectionCards,
+        AppSectionGoals,
     }
 };
 </script>
 
 <template>
-    <main id="dc-main-top">
-        <div class="container">
-            <div class="content-string">
-                <span>Content goes here...</span>
-            </div>
-        </div>
-    </main>
-    <div id="dc-main-bottom">
-        <div class="container">
-            <ul class="list-skills">
-                <li class="skill-content" v-for="li in listQualities">
-                    <img :src="li.src" :alt="li.alt">
-                    <h3>{{ li.nome }}</h3>
-                </li>
-            </ul>
-        </div>
-    </div>
+<main>
+    <AppSectionCards></AppSectionCards>
+    <AppSectionGoals></AppSectionGoals>
+</main>
 </template>
-
-<style lang="scss">
-@use '../../styles/partials/variables' as *;
-@use '../../styles/general.scss' as *;
-@use '../../styles/partials/mixin.scss' as *;
-
-#dc-main-top {            
-    background-color: $bg-main;
-
-    .container {
-        @include my-container-size;
-
-        .content-string {
-            color: $color-white;
-            padding: 50px 0;
-        }
-    }
-}
-
-#dc-main-bottom {            
-    background-color: $bg-primary;
-    color: $color-white;
-
-    .container {
-        @include my-container-size;
-        padding: 50px 0;
-
-        .list-skills {
-            @include my-flex;
-            justify-content: center;
-            gap: 30px;
-
-            .skill-content {
-                @include my-flex;
-                @include my-uppercase;
-                justify-content: center;
-                gap: 15px;
-
-                img {
-                    width: 50px;
-                }
-            }
-        }
-    }
-}
-</style>

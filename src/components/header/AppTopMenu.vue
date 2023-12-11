@@ -71,6 +71,7 @@ export default {
 <style scoped lang="scss">
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/mixin' as *;
+@use '../../styles/partials/typography' as *;
 .list-links {
     display:flex;
     gap: 35px;
