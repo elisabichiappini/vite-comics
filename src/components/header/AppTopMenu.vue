@@ -60,6 +60,7 @@ export default {
 </script>
 
 <template>
+
     <ul class="list-links">
         <li class="link" v-for="li in menu">
             <a :href="li.href" :target="li.target">{{ li.nome }}</a>
@@ -69,7 +70,6 @@ export default {
 
 <style scoped lang="scss">
 @use '../../styles/partials/variables' as *;
-@use '../../styles/general.scss' as *;
 @use '../../styles/partials/mixin' as *;
 .list-links {
     display:flex;
@@ -84,6 +84,7 @@ export default {
                 color: $bg-primary;
                 border-bottom: 2px solid $bg-primary;
         }
+
         a {
             all: unset;
             font-weight: 600;

@@ -27,7 +27,7 @@ export default {
     </div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/mixin' as *;
 .bottom-right {

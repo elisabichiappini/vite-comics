@@ -12,7 +12,6 @@
 
 <style scoped lang="scss">
 @use '../../styles/partials/variables' as *;
-@use '../../styles/general.scss' as *;
     .primary-button{
         padding: 10px 10px;
         border: 2px solid $bg-primary;

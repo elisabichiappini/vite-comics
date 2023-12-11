@@ -18,10 +18,9 @@ export default {
 </div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/mixin' as *;
-@use '../../styles/general.scss' as *;
 
 #footer-top {
     background-image: url('../../../public/img/footer-bg.jpg');

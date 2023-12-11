@@ -42,8 +42,7 @@
     </ul>
 </template>
 
-<style scoped lang="scss">
-@use '../../styles/general.scss' as *;
+<style lang="scss" scoped>
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/mixin' as *;
 .menu-footer-nav {

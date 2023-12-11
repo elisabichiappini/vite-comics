@@ -10,7 +10,7 @@
     </div>
 </template>
 
-<style scoped lang="scss"> 
+<style lang="scss" scoped> 
 .logo {
     width: 80px;
 
