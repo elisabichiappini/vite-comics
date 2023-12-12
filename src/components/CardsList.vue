@@ -110,15 +110,16 @@ export default {
     max-width: 1180px;
     margin: 0 auto;
     text-align: center;
+    padding: 0 0 20px;
 
     .cards-list {
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
-        padding-bottom: 20px;
+        gap: 50px 20px;
+        padding: 50px 0;
         color: $color-white;
         .card {
-            width: calc((100% - 50px) / 6);
+            width: calc((100% - 100px) / 6);
 
         }
     }

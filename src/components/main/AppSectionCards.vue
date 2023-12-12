@@ -11,22 +11,30 @@ export default {
 <template>
     <section id="dc-main-top">
         <div class="container">
+            <h2 class="label-section">CURRENT SERIES</h2>
             <CardsList></CardsList>
         </div>
     </section>
     
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/mixin.scss' as *;
 
 #dc-main-top {            
     background-color: $bg-main;
-
     .container {
         @include my-container-size;
-        padding: 55px 0 25px;
+        position: relative;
+        .label-section {
+        background-color: $bg-primary;
+        color: $color-white;
+        padding: 10px 20px;
+        display: inline-block;
+        position: absolute;
+        top: -25px;
+    }
     }
 }
 </style>
