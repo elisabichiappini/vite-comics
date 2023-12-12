@@ -92,13 +92,13 @@ export default {
 
 <template>
 <div class="container">
-    <div class="cards-list">
+    <ul class="cards-list">
         <Card 
         v-for="card in cards"
         :image="card.thumb"
         :title="card.series">    
         </Card>
-    </div>
+    </ul>
     <AppSecondaryButton></AppSecondaryButton>
 </div>
    

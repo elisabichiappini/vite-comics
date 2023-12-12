@@ -5,12 +5,12 @@ export default {
 </script>
 
 <template>
-    <div class="card">
+    <li class="card">
         <img 
         :src="image" 
         :alt="title">
         <h4>{{ title }}</h4>
-    </div>
+    </li>
 </template>
 
 <style lang="scss" scoped>
@@ -23,7 +23,7 @@ export default {
         object-fit: cover;
         margin-bottom: 10px;
     }
-    h4{
+    h4 {
         text-align: start;
     }
 }

@@ -6,7 +6,7 @@ export default {
 
 <template>
     <button class="fill-button">
-        Load more
+        <h4>Load more</h4>
     </button>
 
 </template>

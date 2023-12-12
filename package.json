@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@fontsource/open-sans": "^5.0.18",
+    "npm-font-open-sans-condensed": "^1.0.3",
     "vue": "^3.3.8"
   },
   "devDependencies": {

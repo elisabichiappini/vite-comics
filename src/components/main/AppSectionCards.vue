@@ -1,5 +1,6 @@
 <script>
 import CardsList from '../CardsList.vue';
+
 export default {
     name: 'SectionCards',
     components: {
@@ -11,11 +12,10 @@ export default {
 <template>
     <section id="dc-main-top">
         <div class="container">
-            <h2 class="label-section">CURRENT SERIES</h2>
+            <h2 class="label-section">Current series</h2>
             <CardsList></CardsList>
         </div>
-    </section>
-    
+    </section> 
 </template>
 
 <style lang="scss" scoped>
@@ -28,13 +28,13 @@ export default {
         @include my-container-size;
         position: relative;
         .label-section {
-        background-color: $bg-primary;
-        color: $color-white;
-        padding: 10px 20px;
-        display: inline-block;
-        position: absolute;
-        top: -25px;
-    }
+            background-color: $bg-primary;
+            color: $color-white;
+            padding: 10px 20px;
+            display: inline-block;
+            position: absolute;
+            top: -25px;
+        }
     }
 }
 </style>
